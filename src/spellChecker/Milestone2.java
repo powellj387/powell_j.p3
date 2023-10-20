@@ -23,7 +23,21 @@ public class Milestone2 {
         System.out.println("Enter a word:");
         String word = reader.readLine();
 
-        // TODO: Implement spell checking logic here
+        public static String spellCheck(String word, Set<String> dictionary) {
+            int minDistance = Integer.MAX_VALUE;
+            String closestWord = null;
+
+            for (String dictWord : dictionary) {
+                int distance = calculateEditDistance(word, dictWord);
+
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestWord = dictWord;
+                }
+            }
+
+            return closestWord;
+        }
 
         System.out.println("Spelled Correctly");
     }
