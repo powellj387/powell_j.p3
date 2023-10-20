@@ -3,7 +3,7 @@ package spellChecker;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.List;
 public class Milestone2 {
 
     public Milestone2() {
@@ -23,22 +23,22 @@ public class Milestone2 {
         System.out.println("Enter a word:");
         String word = reader.readLine();
 
-        public static String spellCheck(String word, Set<String> dictionary) {
-            int minDistance = Integer.MAX_VALUE;
-            String closestWord = null;
+        // Assuming lexicon is a List of words in the English language
+        List<String> lexicon = ...;
 
-            for (String dictWord : dictionary) {
-                int distance = calculateEditDistance(word, dictWord);
+        SpellChecker spellChecker = new SpellChecker(lexicon);
 
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    closestWord = dictWord;
+        if (spellChecker.spelledCorrectly(word)) {
+            System.out.println("Spelled Correctly");
+        } else {
+            List<String> suggestions = spellChecker.suggestWords(word, editDistance);
+            if (suggestions.isEmpty()) {
+                System.out.println("No suggestions");
+            } else {
+                for (String suggestion : suggestions) {
+                    System.out.println(suggestion.toUpperCase());
                 }
             }
-
-            return closestWord;
         }
-
-        System.out.println("Spelled Correctly");
     }
 }
