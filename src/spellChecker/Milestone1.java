@@ -7,10 +7,6 @@ import java.util.ArrayList;
 
 public class Milestone1 {
 
-    public Milestone1() {
-    }
-
-
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         SpellChecker spellChecker = new SpellChecker(new ArrayList<>()); // Pass an empty lexicon

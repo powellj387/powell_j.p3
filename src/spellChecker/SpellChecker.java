@@ -103,20 +103,26 @@ public class SpellChecker {
     }
     public static List<String> suggestWordsTest(String word, int maxEditDistance, List<String> lexicon) {
         List<String> suggestions = new ArrayList<>();
-
+        String trueWord = word.toLowerCase();
         for (String candidate : lexicon) {
-            int editDistance = editDistance(word, candidate);
+            int editDistance = editDistance(trueWord, candidate);
+
             if (editDistance <= maxEditDistance) {
-                suggestions.add(candidate);
+
+                // If the word is spelled correctly and in the lexicon, return it as the only suggestion
+                if (lexicon.contains(trueWord) && editDistance == 0) {
+                    suggestions.clear();
+                    suggestions.add("Spelled correctly");
+                    break;
+                } else {
+                    suggestions.add(candidate);
+                }
             }
         }
-
-        // If the word is spelled correctly and in the lexicon, return it as the only suggestion
-        if (lexicon.contains(word) && !suggestions.contains(word)) {
-            suggestions.clear();
-            suggestions.add(word);
+        if(suggestions.size() == 0){
+            suggestions.add("No suggestions");
         }
-
+        Collections.sort(suggestions);
         return suggestions;
     }
 }

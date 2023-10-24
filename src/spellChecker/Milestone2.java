@@ -10,9 +10,6 @@ import java.util.Scanner;
 
 public class Milestone2 {
 
-    public Milestone2() {
-    }
-
     public static void main(String[] args) throws IOException {
         int editDistance = 2;
         if (args.length > 0) {
@@ -32,23 +29,17 @@ public class Milestone2 {
         File file = new File("resources/lexicon.txt");
         Scanner fileScan = new Scanner(file);
 
-        while(fileScan.hasNextLine()) {
-            lexicon.add(fileScan.nextLine());
+        while (fileScan.hasNextLine()) {
+            lexicon.add(fileScan.nextLine().toLowerCase());
         }
 
-        SpellChecker spellChecker = new SpellChecker(lexicon);
+        ArrayList<String> suggestions = new ArrayList<>(SpellChecker.suggestWordsTest(word, editDistance, lexicon));
 
-        if (spellChecker.spelledCorrectly(word)) {
-            System.out.println("Spelled Correctly");
-        } else {
-            List<String> suggestions = spellChecker.suggestWords(word, editDistance);
-            if (suggestions.isEmpty()) {
-                System.out.println("No suggestions");
-            } else {
-                for (String suggestion : suggestions) {
-                    System.out.println(suggestion.toUpperCase());
-                }
-            }
+        System.out.println("Suggested words: ");
+        for (String item : suggestions) {
+            System.out.println(item);
         }
     }
 }
+
+
