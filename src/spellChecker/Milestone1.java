@@ -17,8 +17,8 @@ public class Milestone1 {
 
         while (true) {
             System.out.println("Enter two words:");
-            String word1 = reader.readLine();
-            String word2 = reader.readLine();
+            String word1 = reader.readLine().toLowerCase();
+            String word2 = reader.readLine().toLowerCase();
 
             int distance = spellChecker.editDistance(word1, word2);
             System.out.println("The edit distance is: " + distance);
