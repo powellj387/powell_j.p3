@@ -1,23 +1,23 @@
 package spellchecker;
 
 import java.util.Collections;
-import java.util.List;
 import java.util.ArrayList;
-
+import java.util.List;
 
 public class SpellChecker {
     private TrieNode root;
+    private List<String> lexicon;
 
     public SpellChecker(List<String> lexicon) {
         root = new TrieNode();
+        this.lexicon = lexicon;
         for (String word : lexicon) {
             insertWord(word);
         }
     }
 
     public boolean spelledCorrectly(String word) {
-        TrieNode node = searchNode(word);
-        return (node != null && node.isEndOfWord);
+        return lexicon.contains(word.toLowerCase());
     }
 
     public List<String> suggestWords(String word, int maxEditDistance) {
@@ -27,7 +27,9 @@ public class SpellChecker {
             suggestions.add("No suggestions");
         } else if (suggestions.size() == 1 && suggestions.get(0).equalsIgnoreCase(word)) {
             suggestions.clear();
-            suggestions.add("Spelled correctly");
+            if (spelledCorrectly(word)) {
+                suggestions.add("Spelled correctly");
+            }
         }
         return suggestions;
     }
@@ -43,32 +45,23 @@ public class SpellChecker {
         }
         current.isEndOfWord = true;
     }
-    private TrieNode searchNode(String word) {
-        TrieNode current = root;
-        for (char c : word.toCharArray()) {
-            int index = c - 'a';
-            if (current.children[index] == null) {
-                return null;
-            }
-            current = current.children[index];
-        }
-        return current;
-    }
 
-    private void searchSuggestions(TrieNode node, String word, String currentWord, int distance, List<String> suggestions) {
+    private void searchSuggestions(TrieNode node, String word, String currentWord, int maxDistance, List<String> suggestions) {
+        int distance = editDistance(word, currentWord);
+
         if (distance < 0) {
             return;
         }
 
-        if (node.isEndOfWord && distance >= 0) {
+        if (node.isEndOfWord && distance >=0) {
             suggestions.add(currentWord);
         }
 
         for (int i = 0; i < 26; i++) {
             if (node.children[i] != null) {
-                char c = (char) (i+'a');
+                char c = (char) (i + 'a');
                 String newWord = currentWord + c;
-                int newDistance = c == word.charAt(0) ? distance : distance - 1;
+                int newDistance = editDistance(word,newWord);
                 searchSuggestions(node.children[i], word, newWord, newDistance, suggestions);
             }
         }

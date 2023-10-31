@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698779685621</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed ms2 to add trie">
+      <created>1698780948550</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698780948550</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,5 +157,12 @@
     <MESSAGE value="compilation stub in" />
     <MESSAGE value="changed ms2 to add trie" />
     <option name="LAST_COMMIT_MESSAGE" value="changed ms2 to add trie" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="spellchecker.SpellChecker$TrieNode" memberName="isEndOfWord" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
