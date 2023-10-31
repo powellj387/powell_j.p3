@@ -1,4 +1,4 @@
-package spellChecker;
+package spellchecker;
 
 import java.util.Collections;
 import java.util.List;

@@ -1,4 +1,4 @@
-package spellChecker;
+package spellchecker;
 
 import java.io.BufferedReader;
 import java.io.IOException;

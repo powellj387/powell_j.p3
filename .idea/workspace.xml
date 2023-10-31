@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2eddeeb-dead-4f5a-be78-51e47819fffd" name="Changes" comment="started">
+    <list default="true" id="d2eddeeb-dead-4f5a-be78-51e47819fffd" name="Changes" comment="finished ms2">
+      <change afterPath="$PROJECT_DIR$/src/Test/P3CompilationStub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spellChecker/Milestone1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellChecker/Milestone1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spellChecker/Milestone2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellChecker/Milestone2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spellChecker/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellChecker/SpellChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellChecker/ConsoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/ConsoleInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellChecker/Milestone1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/Milestone1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellChecker/Milestone2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/Milestone2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellChecker/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/SpellChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/julia/IdeaProjects/powell_j.p3/src/Test"
   }
-}</component>
-  <component name="RunManager" selected="Application.Milestone2">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\IdeaProjects\powell_j.p3\src\Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.P3CompilationStub">
     <configuration name="Milestone1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spellChecker.Milestone1" />
+      <option name="MAIN_CLASS_NAME" value="spellchecker.Milestone1" />
       <module name="powell_j.p3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spellChecker.*" />
+          <option name="PATTERN" value="spellchecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,11 +63,12 @@
       </method>
     </configuration>
     <configuration name="Milestone2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spellChecker.Milestone2" />
+      <option name="MAIN_CLASS_NAME" value="spellchecker.Milestone2" />
       <module name="powell_j.p3" />
+      <option name="PROGRAM_PARAMETERS" value="1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spellChecker.*" />
+          <option name="PATTERN" value="spellchecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,8 +76,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="P3CompilationStub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.P3CompilationStub" />
+      <module name="powell_j.p3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.P3CompilationStub" />
+      <item itemvalue="Application.Milestone1" />
+      <item itemvalue="Application.Milestone2" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P3CompilationStub" />
         <item itemvalue="Application.Milestone2" />
         <item itemvalue="Application.Milestone1" />
       </list>
@@ -97,11 +125,19 @@
       <option name="project" value="LOCAL" />
       <updated>1697837662705</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished ms2">
+      <created>1698180071318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180071318</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="started" />
-    <option name="LAST_COMMIT_MESSAGE" value="started" />
+    <MESSAGE value="finished ms2" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished ms2" />
   </component>
 </project>
