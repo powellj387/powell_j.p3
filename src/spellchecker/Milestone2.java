@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Milestone2 {
@@ -32,7 +33,9 @@ public class Milestone2 {
             lexicon.add(fileScan.nextLine().toLowerCase());
         }
 
-        ArrayList<String> suggestions = new ArrayList<>(SpellChecker.suggestWordsTest(word, editDistance, lexicon));
+        SpellChecker spellChecker = new  SpellChecker(lexicon);
+
+        ArrayList<String> suggestions = new ArrayList<>(spellChecker.suggestWords(word, editDistance));
 
         System.out.println("Suggested words: ");
         for (String item : suggestions) {

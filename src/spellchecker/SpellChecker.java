@@ -98,7 +98,6 @@ public class SpellChecker {
                 }
             }
         }
-
         return dp[m][n];
     }
     public static List<String> suggestWordsTest(String word, int maxEditDistance, List<String> lexicon) {
