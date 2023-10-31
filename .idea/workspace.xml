@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2eddeeb-dead-4f5a-be78-51e47819fffd" name="Changes" comment="compilation stub in">
+    <list default="true" id="d2eddeeb-dead-4f5a-be78-51e47819fffd" name="Changes" comment="changed ms2 to add trie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spellchecker/Milestone2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/Milestone2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spellchecker/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/SpellChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,6 @@
     <configuration name="Milestone2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spellchecker.Milestone2" />
       <module name="powell_j.p3" />
-      <option name="PROGRAM_PARAMETERS" value="1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spellchecker.*" />
@@ -136,13 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698778536569</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed ms2 to add trie">
+      <created>1698779685621</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698779685621</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="started" />
     <MESSAGE value="finished ms2" />
     <MESSAGE value="compilation stub in" />
-    <option name="LAST_COMMIT_MESSAGE" value="compilation stub in" />
+    <MESSAGE value="changed ms2 to add trie" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed ms2 to add trie" />
   </component>
 </project>

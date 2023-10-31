@@ -23,6 +23,12 @@ public class SpellChecker {
     public List<String> suggestWords(String word, int maxEditDistance) {
         List<String> suggestions = new ArrayList<>();
         searchSuggestions(root, word, "", maxEditDistance, suggestions);
+        if (suggestions.isEmpty()) {
+            suggestions.add("No suggestions");
+        } else if (suggestions.size() == 1 && suggestions.get(0).equalsIgnoreCase(word)) {
+            suggestions.clear();
+            suggestions.add("Spelled correctly");
+        }
         return suggestions;
     }
 
@@ -58,12 +64,12 @@ public class SpellChecker {
             suggestions.add(currentWord);
         }
 
-        for (char c = 'a'; c <= 'z'; c++) {
-            for (int i = 0; i < 26; i++) {
-                if (node.children[i] != null) {
-                    String newWord = currentWord + c;
-                    searchSuggestions(node.children[i], word, newWord, c == word.charAt(0) ? distance : distance - 1, suggestions);
-                }
+        for (int i = 0; i < 26; i++) {
+            if (node.children[i] != null) {
+                char c = (char) (i+'a');
+                String newWord = currentWord + c;
+                int newDistance = c == word.charAt(0) ? distance : distance - 1;
+                searchSuggestions(node.children[i], word, newWord, newDistance, suggestions);
             }
         }
     }
@@ -100,6 +106,7 @@ public class SpellChecker {
         }
         return dp[m][n];
     }
+
     public static List<String> suggestWordsTest(String word, int maxEditDistance, List<String> lexicon) {
         List<String> suggestions = new ArrayList<>();
         String trueWord = word.toLowerCase();
@@ -125,3 +132,4 @@ public class SpellChecker {
         return suggestions;
     }
 }
+
