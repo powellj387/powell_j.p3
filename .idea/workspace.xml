@@ -61,7 +61,6 @@
     <configuration name="Milestone2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spellchecker.Milestone2" />
       <module name="powell_j.p3" />
-      <option name="PROGRAM_PARAMETERS" value="1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spellchecker.*" />
@@ -93,8 +92,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Milestone2" />
-        <item itemvalue="Application.P3CompilationStub" />
         <item itemvalue="Application.Milestone1" />
+        <item itemvalue="Application.P3CompilationStub" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698783248599</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="changed ms2 to add trie">
+      <created>1699389489341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699389489341</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

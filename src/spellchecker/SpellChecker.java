@@ -22,15 +22,17 @@ public class SpellChecker {
 
     public List<String> suggestWords(String word, int maxEditDistance) {
         List<String> suggestions = new ArrayList<>();
+        //populate the suggestions list
         searchSuggestions(root, word, "", maxEditDistance, suggestions);
+        //if the suggestion list is empty, tell the user there are no suggestions
         if (suggestions.isEmpty()) {
             suggestions.add("No suggestions");
-        } else if (suggestions.size() == 1 && suggestions.get(0).equalsIgnoreCase(word)) {
+            //if the suggestion list only contains 1 item, and that word is equal to the word provided,
+            //tell the user they spelled the word correctly
+        }else if(spelledCorrectly(word)) {
             suggestions.clear();
-            if (spelledCorrectly(word)) {
-                suggestions.add("Spelled correctly");
+            suggestions.add("Spelled correctly");
             }
-        }
         return suggestions;
     }
 
@@ -53,8 +55,7 @@ public class SpellChecker {
             return;
         }
 
-        if (node.isEndOfWord && distance <= maxDistance) {
-            System.out.println(distance+"  "+currentWord);
+        if (distance <= maxDistance && lexicon.contains(currentWord)) {
             suggestions.add(currentWord);
         }
 
@@ -62,8 +63,7 @@ public class SpellChecker {
             if (node.children[i] != null) {
                 char c = (char) (i + 'a');
                 String newWord = currentWord + c;
-                int newDistance = editDistance(word,newWord);
-                searchSuggestions(node.children[i], word, newWord, newDistance, suggestions);
+                searchSuggestions(node.children[i], word, newWord, maxDistance, suggestions);
             }
         }
     }
