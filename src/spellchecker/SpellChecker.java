@@ -53,7 +53,8 @@ public class SpellChecker {
             return;
         }
 
-        if (node.isEndOfWord && distance >=0) {
+        if (node.isEndOfWord && distance <= maxDistance) {
+            System.out.println(distance+"  "+currentWord);
             suggestions.add(currentWord);
         }
 
