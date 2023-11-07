@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2eddeeb-dead-4f5a-be78-51e47819fffd" name="Changes" comment="changed ms2 to add trie">
+      <change afterPath="$PROJECT_DIR$/src/Test/SpellCheckerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spellchecker/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/SpellChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/powell_j.p3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/powell_j.p3.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +45,11 @@
       <recent name="C:\Users\julia\IdeaProjects\powell_j.p3\src\Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Milestone2">
-    <configuration name="Milestone1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spellchecker.Milestone1" />
-      <module name="powell_j.p3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spellchecker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SpellCheckerTest.testSuggestWords">
     <configuration name="Milestone2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spellchecker.Milestone2" />
       <module name="powell_j.p3" />
+      <option name="PROGRAM_PARAMETERS" value="1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spellchecker.*" />
@@ -84,15 +73,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpellCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="powell_j.p3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.SpellCheckerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpellCheckerTest.testSpelledCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="powell_j.p3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.SpellCheckerTest" />
+      <option name="METHOD_NAME" value="testSpelledCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpellCheckerTest.testSuggestWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="powell_j.p3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.SpellCheckerTest" />
+      <option name="METHOD_NAME" value="testSuggestWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.P3CompilationStub" />
-      <item itemvalue="Application.Milestone1" />
       <item itemvalue="Application.Milestone2" />
+      <item itemvalue="JUnit.SpellCheckerTest" />
+      <item itemvalue="JUnit.SpellCheckerTest.testSpelledCorrectly" />
+      <item itemvalue="JUnit.SpellCheckerTest.testSuggestWords" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpellCheckerTest.testSuggestWords" />
+        <item itemvalue="JUnit.SpellCheckerTest" />
+        <item itemvalue="JUnit.SpellCheckerTest.testSpelledCorrectly" />
         <item itemvalue="Application.Milestone2" />
-        <item itemvalue="Application.Milestone1" />
         <item itemvalue="Application.P3CompilationStub" />
       </list>
     </recent_temporary>
@@ -155,14 +195,7 @@
       <option name="project" value="LOCAL" />
       <updated>1698783248599</updated>
     </task>
-    <task id="LOCAL-00008" summary="changed ms2 to add trie">
-      <created>1699389489341</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1699389489341</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
