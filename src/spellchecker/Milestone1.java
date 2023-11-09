@@ -1,3 +1,4 @@
+//@authors Julian Powell and Alex Csorba
 package spellchecker;
 
 import java.io.BufferedReader;

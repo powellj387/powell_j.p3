@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2eddeeb-dead-4f5a-be78-51e47819fffd" name="Changes" comment="changed ms2 to add trie">
-      <change afterPath="$PROJECT_DIR$/src/Test/SpellCheckerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/correctOutput.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/ULTrieTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spellchecker/ULTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/powell_j.p3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/powell_j.p3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/powell_j.p3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Csorba_powell.p3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/SpellCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/SpellCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellchecker/ConsoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/ConsoleInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellchecker/Milestone1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/Milestone1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellchecker/Milestone2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/Milestone2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spellchecker/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spellchecker/SpellChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +43,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/julia/IdeaProjects/powell_j.p3/src/Test&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/julian/IdeaProjects/powell_j.p3/resources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="C:\Users\julia\IdeaProjects\powell_j.p3\src\Test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpellCheckerTest.testSuggestWords">
+  <component name="RunManager" selected="Application.ConsoleInterface">
+    <configuration name="ConsoleInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spellchecker.ConsoleInterface" />
+      <module name="Csorba_powell.p3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spellchecker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Milestone2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spellchecker.Milestone2" />
-      <module name="powell_j.p3" />
+      <module name="Csorba_powell.p3" />
       <option name="PROGRAM_PARAMETERS" value="1" />
       <extension name="coverage">
         <pattern>
@@ -60,21 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P3CompilationStub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test.P3CompilationStub" />
-      <module name="powell_j.p3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpellCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="powell_j.p3" />
+      <module name="Csorba_powell.p3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Test.*" />
@@ -89,7 +101,7 @@
       </method>
     </configuration>
     <configuration name="SpellCheckerTest.testSpelledCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="powell_j.p3" />
+      <module name="Csorba_powell.p3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Test.*" />
@@ -105,7 +117,7 @@
       </method>
     </configuration>
     <configuration name="SpellCheckerTest.testSuggestWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="powell_j.p3" />
+      <module name="Csorba_powell.p3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Test.*" />
@@ -120,8 +132,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Csorba_powell.p3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Csorba_powell.p3" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.P3CompilationStub" />
+      <item itemvalue="Application.ConsoleInterface" />
       <item itemvalue="Application.Milestone2" />
       <item itemvalue="JUnit.SpellCheckerTest" />
       <item itemvalue="JUnit.SpellCheckerTest.testSpelledCorrectly" />
@@ -129,11 +154,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpellCheckerTest.testSuggestWords" />
+        <item itemvalue="Application.ConsoleInterface" />
         <item itemvalue="JUnit.SpellCheckerTest" />
+        <item itemvalue="JUnit.SpellCheckerTest.testSuggestWords" />
         <item itemvalue="JUnit.SpellCheckerTest.testSpelledCorrectly" />
         <item itemvalue="Application.Milestone2" />
-        <item itemvalue="Application.P3CompilationStub" />
       </list>
     </recent_temporary>
   </component>
